@@ -20,6 +20,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Types\CheckoutStatusType $CheckoutStatus
  * @property \DTS\eBaySDK\Trading\Types\ShippingDetailsType $ShippingDetails
  * @property \DTS\eBaySDK\Trading\Enums\TradingRoleCodeType $CreatingUserRole
+ * @property boolean $eBayCollectAndRemitTax
  * @property \DateTime $CreatedTime
  * @property \DTS\eBaySDK\Trading\Enums\BuyerPaymentMethodCodeType[] $PaymentMethods
  * @property string $SellerEmail
@@ -110,6 +111,12 @@ class OrderType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'CreatingUserRole'
+        ],
+        'eBayCollectAndRemitTax' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'eBayCollectAndRemitTax'
         ],
         'CreatedTime' => [
             'type' => 'DateTime',

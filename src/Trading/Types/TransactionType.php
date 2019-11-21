@@ -53,6 +53,8 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Types\AmountType $ActualShippingCost
  * @property \DTS\eBaySDK\Trading\Types\AmountType $ActualHandlingCost
  * @property string $OrderLineItemID
+ * @property boolean $eBayCollectAndRemitTax
+ * @property \DTS\eBaySDK\Trading\Types\TaxesType' $eBayCollectAndRemitTaxes
  * @property string $eBayPaymentID
  * @property \DTS\eBaySDK\Trading\Types\PaymentHoldDetailType $PaymentHoldDetails
  * @property \DTS\eBaySDK\Trading\Types\SellerDiscountsType $SellerDiscounts
@@ -328,6 +330,18 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'OrderLineItemID'
+        ],
+        'eBayCollectAndRemitTax' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'eBayCollectAndRemitTax'
+        ],
+        'eBayCollectAndRemitTaxes' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\TaxesType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'eBayCollectAndRemitTaxes'
         ],
         'eBayPaymentID' => [
             'type' => 'string',
