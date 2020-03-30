@@ -10,10 +10,7 @@
 
 namespace DTS\eBaySDK\Trading\Enums;
 
-class TaxTypeCodeType
+class CollectionMethodCodeType
 {
-    const C_CUSTOM_CODE = 'CustomCode';
-    const C_GST = 'GST';
-    const C_SALES_TAX = 'SalesTax';
-    const C_WASTE_RECYCLING_FEE = 'WasteRecyclingFee';
+    const C_NET = 'NET';
 }
