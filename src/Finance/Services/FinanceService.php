@@ -42,10 +42,10 @@ class FinanceService extends \DTS\eBaySDK\Finance\Services\FinanceBaseService
                     'valid' => ['int'],
                     'required' => false
                 ],
-                // 'filter' => [
-                //     'valid' => ['array'],
-                //     'required' => false,
-                // ],
+                'filter' => [
+                    'valid' => ['string'],
+                    'required' => false,
+                ],
                 'sort' => [
                     'valid' => ['string'],
                     'required' => false,
@@ -76,10 +76,10 @@ class FinanceService extends \DTS\eBaySDK\Finance\Services\FinanceBaseService
                     'valid' => ['int'],
                     'required' => false
                 ],
-                // 'filter' => [
-                //     'valid' => ['array'],
-                //     'required' => false,
-                // ],
+                'filter' => [
+                    'valid' => ['string'],
+                    'required' => false,
+                ],
                 'sort' => [
                     'valid' => ['string'],
                     'required' => false,
@@ -91,10 +91,10 @@ class FinanceService extends \DTS\eBaySDK\Finance\Services\FinanceBaseService
             'resource' => 'transaction_summary',
             'responseClass' => '\DTS\eBaySDK\Finance\Types\GetTransactionSummaryRestResponse',
             'params' => [
-                // 'filter' => [
-                //     'valid' => ['array'],
-                //     'required' => true,
-                // ],
+                'filter' => [
+                    'valid' => ['string'],
+                    'required' => false,
+                ],
             ]
         ],
         'GetSellerFundsSummary' => [

@@ -14,8 +14,8 @@ namespace DTS\eBaySDK\Finance\Types;
  *
  * @property integer $limit
  * @property integer $offset
- * @property \DTS\eBaySDK\Finance\Types\FilterField[] $filter
- * @property \DTS\eBaySDK\Finance\Types\SortField[] $sort
+ * @property string $filter
+ * @property string $sort
  */
 class TransactionsRestRequest extends \DTS\eBaySDK\Types\BaseType
 {
@@ -36,14 +36,14 @@ class TransactionsRestRequest extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'offset'
         ],
         'filter' => [
-            'type' => 'DTS\eBaySDK\Finance\Types\FilterField',
-            'repeatable' => true,
+            'type' => 'string',
+            'repeatable' => false,
             'attribute' => false,
             'elementName' => 'filter'
         ],
         'sort' => [
-            'type' => 'DTS\eBaySDK\Finance\Types\SortField',
-            'repeatable' => true,
+            'type' => 'string',
+            'repeatable' => false,
             'attribute' => false,
             'elementName' => 'sort'
         ],

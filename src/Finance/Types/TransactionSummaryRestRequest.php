@@ -12,7 +12,7 @@ namespace DTS\eBaySDK\Finance\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Finance\Types\FilterField[] $filter
+ * @property string $filter
  */
 class TransactionSummaryRestRequest extends \DTS\eBaySDK\Finance\Types\BaseType
 {
@@ -21,8 +21,8 @@ class TransactionSummaryRestRequest extends \DTS\eBaySDK\Finance\Types\BaseType
      */
     private static $propertyTypes = [
         'filter' => [
-            'type' => 'DTS\eBaySDK\Finance\Types\FilterField',
-            'repeatable' => true,
+            'type' => 'string',
+            'repeatable' => false,
             'attribute' => false,
             'elementName' => 'filter'
         ],

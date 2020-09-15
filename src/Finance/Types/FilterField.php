@@ -50,7 +50,7 @@ class FilterField extends \DTS\eBaySDK\Types\BaseType
         ],
         'value' => [
             'type' => 'string',
-            'repeatable' => true,
+            'repeatable' => false,
             'attribute' => false,
             'elementName' => 'value'
         ]
