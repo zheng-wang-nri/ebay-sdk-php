@@ -20,6 +20,30 @@ class SendOfferToInterestedBuyersRestRequest extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
+        'allowCounterOffer' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'allowCounterOffer'
+        ],
+        'message' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'message'
+        ],
+        'offerDuration' => [
+            'type' => 'DTS\eBaySDK\Negotiation\Types\TimeDurationType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'offerDuration'
+        ],
+        'offeredItems' => [
+            'type' => 'DTS\eBaySDK\Negotiation\Types\OfferItemType',
+            'repeatable' => true,
+            'attribute' => false,
+            'elementName' => 'offeredItems'
+        ],
     ];
 
     /**

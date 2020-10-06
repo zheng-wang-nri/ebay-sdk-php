@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Inventory\Enums;
+namespace DTS\eBaySDK\Negotiation\Enums;
 
 class TimeDurationUnitEnum
 {

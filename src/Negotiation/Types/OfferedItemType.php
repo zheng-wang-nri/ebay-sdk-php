@@ -16,7 +16,7 @@ namespace DTS\eBaySDK\Negotiation\Types;
  * @property string $listingId
  * @property integer $quantity
  */
-class OfferedItem extends \DTS\eBaySDK\Types\BaseType
+class OfferedItemType extends \DTS\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
