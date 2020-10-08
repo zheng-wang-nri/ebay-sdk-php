@@ -30,10 +30,6 @@ class NegotiationService extends \DTS\eBaySDK\Negotiation\Services\NegotiationBa
             'resource' => 'find_eligible_items',
             'responseClass' => '\DTS\eBaySDK\Negotiation\Types\FindEligibleItemsRestResponse',
             'params' => [
-                'sku' => [
-                    'valid' => ['string'],
-                    'required' => true
-                ]
             ]
         ]
     ];

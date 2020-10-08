@@ -12,7 +12,8 @@ namespace DTS\eBaySDK\Negotiation\Types;
 
 /**
  *
- * @property integer $listingId
+ * @property string $unit
+ * @property integer $value
  */
 class TimeDurationType extends \DTS\eBaySDK\Types\BaseType
 {

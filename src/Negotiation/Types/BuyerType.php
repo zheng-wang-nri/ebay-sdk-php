@@ -12,38 +12,20 @@ namespace DTS\eBaySDK\Negotiation\Types;
 
 /**
  *
- * @property string $sku
+ * @property string $maskedUsername
  */
-class SendOfferToInterestedBuyersRestRequest extends \DTS\eBaySDK\Types\BaseType
+class BuyerType extends \DTS\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'allowCounterOffer' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'allowCounterOffer'
-        ],
-        'message' => [
+        'maskedUsername' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'message'
-        ],
-        'offerDuration' => [
-            'type' => 'DTS\eBaySDK\Negotiation\Types\TimeDurationType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'offerDuration'
-        ],
-        'offeredItems' => [
-            'type' => 'DTS\eBaySDK\Negotiation\Types\OfferedItemType',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'offeredItems'
-        ],
+            'elementName' => 'maskedUsername'
+        ]
     ];
 
     /**

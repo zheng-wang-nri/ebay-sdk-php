@@ -12,38 +12,32 @@ namespace DTS\eBaySDK\Negotiation\Types;
 
 /**
  *
- * @property string $sku
+ * @property boolean $allowCounterOffer
+ * @property BuyerType[] $buyer
+ * @property string $offerId
+ * @property string $message
+ * @property string $offerType
+ * @property string $offerStatus
+ * @property string $initiatedBy
+ * @property string $creationDate
+ * @property string $lastModifiedDate
+ * @property string $revision
+ * @property TimeDurationType $offerDuration
+ * @property OfferedItemType[] $offeredItems
+ *
  */
-class SendOfferToInterestedBuyersRestRequest extends \DTS\eBaySDK\Types\BaseType
+class OffersType extends \DTS\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'allowCounterOffer' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'allowCounterOffer'
-        ],
-        'message' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'message'
-        ],
-        'offerDuration' => [
-            'type' => 'DTS\eBaySDK\Negotiation\Types\TimeDurationType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'offerDuration'
-        ],
-        'offeredItems' => [
-            'type' => 'DTS\eBaySDK\Negotiation\Types\OfferedItemType',
+        'offers' => [
+            'type' => 'DTS\eBaySDK\Negotiation\Types\OfferType',
             'repeatable' => true,
             'attribute' => false,
-            'elementName' => 'offeredItems'
-        ],
+            'elementName' => 'offers'
+        ]
     ];
 
     /**
