@@ -31,10 +31,10 @@ class NegotiationService extends \DTS\eBaySDK\Negotiation\Services\NegotiationBa
             'responseClass' => '\DTS\eBaySDK\Negotiation\Types\FindEligibleItemsRestResponse',
             'params' => [
                 'limit' => [
-                    'valid' => ['string']
+                    'valid' => ['int']
                 ],
                 'offset' => [
-                    'valid' => ['string']
+                    'valid' => ['int']
                 ]
             ]
         ]
