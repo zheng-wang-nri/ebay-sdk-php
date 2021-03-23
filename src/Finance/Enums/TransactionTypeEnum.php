@@ -18,5 +18,5 @@ class TransactionTypeEnum
     const C_DISPUTE  = 'DISPUTE';
     const C_SHIPPING_LABEL = 'SHIPPING_LABEL';
     const C_TRANSFER = 'TRANSFER';
-    const C_NON_SALE_CHARGE = 'NONE_SALE_CHARGE';
+    const C_NON_SALE_CHARGE = 'NON_SALE_CHARGE';
 }
