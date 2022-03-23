@@ -321,6 +321,13 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
             'responseClass' => '\DTS\eBaySDK\Inventory\Types\PublishOfferByInventoryItemGroupRestResponse',
             'params' => [
             ]
+        ],
+        'BulkGetInventoryItem' => [
+            'method' => 'POST',
+            'resource' => 'bulk_get_inventory_item',
+            'responseClass' => '\DTS\eBaySDK\Inventory\Types\BulkGetInventoryItemResponse',
+            'params' => [
+            ]
         ]
     ];
 
@@ -834,5 +841,23 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
     public function publishOfferByInventoryItemGroupAsync(\DTS\eBaySDK\Inventory\Types\PublishOfferByInventoryItemGroupRestRequest $request)
     {
         return $this->callOperationAsync('PublishOfferByInventoryItemGroup', $request);
+    }
+
+    /**
+     * @param \DTS\eBaySDK\Inventory\Types\BulkGetInventoryItemRestRequest $request
+     * @return \DTS\eBaySDK\Inventory\Types\BulkGetInventoryItemResponse
+     */
+    public function bulkGetInventoryItem(\DTS\eBaySDK\Inventory\Types\BulkGetInventoryItemRestRequest $request) 
+    {
+        return $this->bulkGetInventoryItem($request)->wait();
+    }
+
+    /**
+     * @param \DTS\eBaySDK\Inventory\Types\BulkGetInventoryItemRestRequest $request
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function bulkGetInventoryItemAsync(\DTS\eBaySDK\Inventory\Types\BulkGetInventoryItemRestRequest $request) 
+    {
+        return $this->callOperationAsync('BulkGetInventoryItem', $request);
     }
 }
