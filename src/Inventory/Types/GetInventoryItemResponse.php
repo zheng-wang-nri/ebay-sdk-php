@@ -12,7 +12,6 @@ namespace DTS\eBaySDK\Inventory\Types;
 
 class GetInventoryItemResponse extends \DTS\eBaySDK\Types\BaseType
 {
-
 	private static $propertyTypes = [
 		'errors' => [
 			'type' => 'DTS\eBaySDK\Inventory\Types\ErrorDetailV3',
