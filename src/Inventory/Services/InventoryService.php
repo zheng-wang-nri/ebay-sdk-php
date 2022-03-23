@@ -849,7 +849,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
      */
     public function bulkGetInventoryItem(\DTS\eBaySDK\Inventory\Types\BulkGetInventoryItemRestRequest $request)
     {
-        return $this->bulkGetInventoryItem($request)->wait();
+        return $this->bulkGetInventoryItemAsync($request)->wait();
     }
 
     /**
