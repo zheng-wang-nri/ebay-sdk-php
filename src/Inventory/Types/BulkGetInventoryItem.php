@@ -9,7 +9,7 @@ class BulkGetInventoryItem extends \DTS\eBaySDK\Types\BaseType
 	 */
 	private static $propertyTypes = [
 		'requests' => [
-			'type' => 'DTS\eBaySDK\Inventory\Types\InventoryItem',
+			'type' => 'DTS\eBaySDK\Inventory\Types\GetInventoryItem',
 			'repeatable' => true,
 			'attribute' => false,
 			'elementName' => 'requests'

@@ -26,7 +26,7 @@ class InventoryItemWithSkuLocaleGroupKeys extends \DTS\eBaySDK\Types\BaseType
 			'elementName' => 'availability'
 		],
 		'condition' => [
-			'type' => 'DTS\eBaySDK\Inventory\Enums\ConditionEnum',
+			'type' => 'string',
 			'repeatable' => false,
 			'attribute' => false,
 			'elementName' => 'condition'
@@ -44,19 +44,19 @@ class InventoryItemWithSkuLocaleGroupKeys extends \DTS\eBaySDK\Types\BaseType
 			'elementName' => 'inventoryItemGroupKeys'
 		],
 		'locale' => [
-			'type' => '\DTS\eBaySDK\Inventory\Enums\LocaleEnum',
+			'type' => 'string',
 			'repeatable' => false,
 			'attribute' => false,
 			'elementName' => 'locale'
 		],
 		'packageWeightAndSize' => [
-			'type' => '\DTS\eBaySDK\Inventory\Types\PackageWeightAndSize',
+			'type' => 'DTS\eBaySDK\Inventory\Types\PackageWeightAndSize',
 			'repeatable' => false,
 			'attribute' => false,
 			'elementName' => 'packageWeightAndSize'
 		],
 		'product' => [
-			'type' => '\DTS\eBaySDK\Inventory\Types\Product',
+			'type' => 'DTS\eBaySDK\Inventory\Types\Product',
 			'repeatable' => false,
 			'attribute' => false,
 			'elementName' => 'product'
@@ -79,7 +79,7 @@ class InventoryItemWithSkuLocaleGroupKeys extends \DTS\eBaySDK\Types\BaseType
 		parent::__construct($parentValues);
 
 		if (!array_key_exists(__CLASS__, self::$properties)) {
-			self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$properties);
+			self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
 		}
 
 		$this->setValues(__CLASS__, $childValues);

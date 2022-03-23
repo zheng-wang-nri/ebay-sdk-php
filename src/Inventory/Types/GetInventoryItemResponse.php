@@ -20,7 +20,7 @@ class GetInventoryItemResponse extends \DTS\eBaySDK\Types\BaseType
 			'elementName' => 'errors'
 		],
 		'inventoryItem' => [
-			'type' => '\DTS\eBaySDK\Inventory\Types\InventoryItemWithSkuLocaleGroupKeys',
+			'type' => 'DTS\eBaySDK\Inventory\Types\InventoryItemWithSkuLocaleGroupKeys',
 			'repeatable' => false,
 			'attribute' => false,
 			'elementName' => 'inventoryItem'
@@ -30,18 +30,6 @@ class GetInventoryItemResponse extends \DTS\eBaySDK\Types\BaseType
 			'repeatable' => false,
 			'attribute' => false,
 			'elementName' => 'sku'
-		],
-		'statusCode' => [
-			'type' => 'string',
-			'repeatable' => false,
-			'attribute' => false,
-			'elementName' => 'statusCode'
-		],
-		'warnings' => [
-			'type' => '\DTS\eBaySDK\Inventory\Types\ErrorDetailV3',
-			'repeatable' => true,
-			'attribute' => false,
-			'elementName' => 'warnings'
 		]
 	];
 

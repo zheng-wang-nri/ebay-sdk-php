@@ -13,7 +13,7 @@ class GetInventoryItem extends \DTS\eBaySDK\Types\BaseType
 	private static $propertyTypes = [
 		'sku' => [
 			'type' => 'string',
-			'repeatable' => true,
+			'repeatable' => false,
 			'attribute' => false,
 			'elementName' => 'sku'
 		]

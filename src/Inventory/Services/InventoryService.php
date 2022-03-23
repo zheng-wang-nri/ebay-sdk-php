@@ -325,7 +325,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'BulkGetInventoryItem' => [
             'method' => 'POST',
             'resource' => 'bulk_get_inventory_item',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\BulkGetInventoryItemResponse',
+            'responseClass' => '\DTS\eBaySDK\Inventory\Types\BulkGetInventoryItemRestResponse',
             'params' => [
             ]
         ]
@@ -845,7 +845,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
 
     /**
      * @param \DTS\eBaySDK\Inventory\Types\BulkGetInventoryItemRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\BulkGetInventoryItemResponse
+     * @return \DTS\eBaySDK\Inventory\Types\BulkGetInventoryItemRestResponse
      */
     public function bulkGetInventoryItem(\DTS\eBaySDK\Inventory\Types\BulkGetInventoryItemRestRequest $request)
     {
