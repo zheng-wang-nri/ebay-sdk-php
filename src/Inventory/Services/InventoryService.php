@@ -868,7 +868,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
 	 */
 	public function bulkCreateOrReplaceInventoryItem(\DTS\eBaySDK\Inventory\Types\BulkCreateOrReplaceInventoryItemRestRequest $request)
 	{
-		return $this->bulkCreateOrReplaceInventoryItemAsync($request);
+		return $this->bulkCreateOrReplaceInventoryItemAsync($request)->wait();
 	}
 
 	/**

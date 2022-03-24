@@ -20,6 +20,12 @@ class InventoryItemResponse extends \DTS\eBaySDK\Types\BaseType
 			'attribute' => false,
 			'elementName' => 'locale',
 		],
+		'sku' => [
+			'type' => 'string',
+			'repeatable' => false,
+			'attribute' => false,
+			'elementName' => 'sku'
+		],
 		'statusCode' => [
 			'type' => 'integer',
 			'repeatable' => false,
