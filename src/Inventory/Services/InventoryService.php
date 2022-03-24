@@ -19,6 +19,18 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
 	 * @property array $operations Associative array of operations provided by the service.
 	 */
 	protected static $operations = [
+		'BulkCreateOrReplaceInventoryItem' => [
+			'method' => 'POST',
+			'resource' => 'bulk_create_or_replace_inventory_item',
+			'responseClass' => '\DTS\eBaySDK\Inventory\Types\BulkCreateOrReplaceInventoryItemRestResponse',
+			'params' => []
+		],
+		'BulkGetInventoryItem' => [
+			'method' => 'POST',
+			'resource' => 'bulk_get_inventory_item',
+			'responseClass' => '\DTS\eBaySDK\Inventory\Types\BulkGetInventoryItemRestResponse',
+			'params' => []
+		],
 		'BulkUpdatePriceAndQuantity' => [
 			'method' => 'POST',
 			'resource' => 'bulk_update_price_quantity',
@@ -316,18 +328,6 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
 			'method' => 'POST',
 			'resource' => 'offer/publish_by_inventory_item_group',
 			'responseClass' => '\DTS\eBaySDK\Inventory\Types\PublishOfferByInventoryItemGroupRestResponse',
-			'params' => []
-		],
-		'BulkGetInventoryItem' => [
-			'method' => 'POST',
-			'resource' => 'bulk_get_inventory_item',
-			'responseClass' => '\DTS\eBaySDK\Inventory\Types\BulkGetInventoryItemRestResponse',
-			'params' => []
-		],
-		'BulkCreateOrReplaceInventoryItem' => [
-			'method' => 'POST',
-			'resource' => 'bulk_create_or_replace_inventory_item',
-			'responseClass' => '\DTS\eBaySDK\Inventory\Types\BulkCreateOrReplaceInventoryItemRestResponse',
 			'params' => []
 		]
 	];

@@ -3,19 +3,19 @@
 namespace DTS\eBaySDK\Inventory\Types;
 
 /**
- * DTS\eBaySDK\Inventory\Types\InventoryItemResponse $responses
+ * @param DTS\eBaySDK\Inventory\Types\InventoryItemWithSkuLocale[] $requests
  */
-class BulkCreateOrReplaceInventoryItemResponse extends \DTS\eBaySDK\Types\BaseType
+class BulkInventoryItem extends \DTS\eBaySDK\Types\BaseType
 {
 	/**
 	 * @var array Properties belonging to objects of this class.
 	 */
 	private static $propertyTypes = [
-		'responses' => [
-			'type' => 'DTS\eBaySDK\Inventory\Types\InventoryItemResponse',
+		'requests' => [
+			'type' => 'DTS\eBaySDK\Inventory\Types\InventoryItemWithSkuLocale',
 			'repeatable' => true,
 			'attribute' => false,
-			'elementName' => 'responses'
+			'elementName' => 'requests'
 		]
 	];
 

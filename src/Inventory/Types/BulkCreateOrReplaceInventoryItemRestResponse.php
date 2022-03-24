@@ -2,7 +2,7 @@
 
 namespace DTS\eBaySDK\Inventory\Types;
 
-class BulkCreateOrReplaceInventoryItemRestResponse extends \DTS\eBaySDK\Inventory\Types\BulkCreateOrReplaceInventoryItemResponse
+class BulkCreateOrReplaceInventoryItemRestResponse extends \DTS\eBaySDK\Inventory\Types\BulkInventoryItemResponse
 {
 	/**
 	 * @var array Properties belonging to objects of this class.
