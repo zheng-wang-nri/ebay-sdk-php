@@ -2,6 +2,9 @@
 
 namespace DTS\eBaySDK\Inventory\Types;
 
+use DTS\eBaySDK\HttpHeadersTrait;
+use DTS\eBaySDK\StatusCodeTrait;
+
 /**
  * @property \DTS\eBaySDK\Inventory\Types\ErrorDetailV3 $errors
  * @property \DTS\eBaySDK\Inventory\Types\InventoryItemWithSkuLocaleGroupKeys $inventoryItem
@@ -12,6 +15,9 @@ namespace DTS\eBaySDK\Inventory\Types;
 
 class GetInventoryItemResponse extends \DTS\eBaySDK\Types\BaseType
 {
+	use StatusCodeTrait;
+	use HttpHeadersTrait;
+
 	private static $propertyTypes = [
 		'errors' => [
 			'type' => 'DTS\eBaySDK\Inventory\Types\ErrorDetailV3',
@@ -35,8 +41,10 @@ class GetInventoryItemResponse extends \DTS\eBaySDK\Types\BaseType
 
 	/**
 	 * @param array $values Optional properties and values to assign to the object.
+	 * @param int $statusCode Status code
+	 * @param array $headers HTTP Response headers.
 	 */
-	public function __construct(array $values = [])
+	public function __construct(array $values = [], $statusCode = 200, array $headers = [])
 	{
 		list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
@@ -47,5 +55,9 @@ class GetInventoryItemResponse extends \DTS\eBaySDK\Types\BaseType
 		}
 
 		$this->setValues(__CLASS__, $childValues);
+
+		$this->statusCode = (int)$statusCode;
+
+		$this->setHeaders($headers);
 	}
 }
